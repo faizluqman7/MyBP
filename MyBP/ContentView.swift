@@ -45,12 +45,12 @@ struct ContentView: View {
                                 
                                 HStack{
                                     Text("Systolic").padding()
-                                    TextField("Top Number", text: $topnumberinput).keyboardType(.numberPad).padding()
+                                    TextField("First number", text: $topnumberinput).keyboardType(.numberPad).padding()
                                 }
                                 
                                 HStack{
                                     Text("Diastolic").padding()
-                                    TextField("Bottom Number", text: $bottomnumberinput).keyboardType(.numberPad).padding()
+                                    TextField("Second Number", text: $bottomnumberinput).keyboardType(.numberPad).padding()
                                 }
                                 
                                 DatePicker("Date", selection: $newdate).padding()
