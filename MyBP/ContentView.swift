@@ -73,7 +73,7 @@ struct ContentView: View {
                             Text("SYS \n **\(item.uppernumber)**") .padding().multilineTextAlignment(.center)
                             Text("DIA \n **\(item.lowernumber)**") .padding().multilineTextAlignment(.center)
                             Text(item.timestamp!, formatter: itemFormatter)
-                        }.navigationTitle(Text("BP Tracker"))
+                        }//.navigationTitle(Text("BP Tracker"))
                     }
                     .onDelete(perform: deleteItems)
                 }
@@ -82,8 +82,9 @@ struct ContentView: View {
                         EditButton()
                     }
                 }
-            }
+            }.navigationTitle(Text("BP Tracker"))
         }
+        
     }
 
     private func addItem() {
